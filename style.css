@@ -1,0 +1,46 @@
+body {
+    background-color: #C9C9C9;
+    color: #45454d;
+    margin: 0;
+    display: grid;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+}
+.header {
+    margin: auto;
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+}
+
+.spinner{
+    border: 16px solid rgb(180, 179, 179); /* Light grey */
+    border-top: 16px solid #45454d; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+}
+      
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #45454d;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin: 2rem;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button:focus {
+    outline:0;
+}
